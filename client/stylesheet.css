@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: -webkit-linear-gradient(left, #ededed, #ececec);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+main {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #ccc;
+    font-weight: 900;
+}
+
+.top-header{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: linear-gradient(rgb(0, 0, 0), rgb(47, 47, 47));
+}
+
+.top-header h1{
+    margin: 0;
+    color: #fff;
+}
+
+table {
+    margin: 50px auto;
+    width: 100%;
+}
+
+
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+    text-align: center;
+}
+
+.containers {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.image-panel{
+    width: 50%;
+    padding: 18px;
+}
+
+.image-panel img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.show-btn-box{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.show-btn-box button{
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    background-color: rgb(6, 161, 6);
+    color: #fff;
+    padding: 9.5px;
+    user-select: none;
+}
+
+.show-btn-box button:hover{
+    background-color: rgb(3, 141, 3);
+}
+
+.outer-container{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    min-width: 90vw;
+    min-height: 70vh;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.outer-container .close{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.outer-container .close div{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.outer-container .close i{
+    color: black;
+    font-size: 25px;
+}
+
+#update-row{
+    border: 1px solid red;
+}
+
+
+@media(max-width:991px){
+    .image-panel{
+        width: 53%;
+        padding: 10px;
+    }
+    .image-panel img{
+        height: 350px;
+    }
+}
+
+@media(max-width:760px){
+    .image-panel{
+        display: none;
+    }
+}
